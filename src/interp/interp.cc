@@ -1691,6 +1691,7 @@ RunResult Thread::StepInternal(Trap::Ptr* out_trap) {
     case O::BrOnExn:
     case O::InterpData:
     case O::Invalid:
+    case O::StructNew:
       WABT_UNREACHABLE;
       break;
   }
